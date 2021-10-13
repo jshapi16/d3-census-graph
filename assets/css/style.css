@@ -29,3 +29,22 @@ body {
   margin: 0;
   font-size: 16px;
 }
+
+
+#graphbackground{
+  fill:#89bdd3;  
+}
+
+.header{
+  padding-top: 10px;
+  color: rgb(72, 52, 72);
+}
+
+.header2{
+  text-align: center;
+  padding-left: 300px;
+}
+
+.mycontainer{
+  fill: rgb(125, 125, 211);
+}
