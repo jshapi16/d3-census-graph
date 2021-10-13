@@ -126,3 +126,4 @@ d3.csv("data.csv").then(function(censusData) {
   }).catch(function(error) {
     console.log(error);
 });
+

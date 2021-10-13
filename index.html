@@ -25,11 +25,12 @@
   </div>
 </nav>
 
-<body>
+<body onload="initializeViz();">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-12">
         <h1 class="header"> 2014 American Community Survey: Healthcare and Poverty</h1>
+        <p>The American Community Survey collects data about fundamental parts of American life, such as education levels, poverty, healthcare, and more. </p>
       </div>
     </div>
     <div class="row">
@@ -46,15 +47,34 @@
           <h2 class="header2">Correlations Discovered Between Health Risks and Poverty</h2>
         </div>
         <div>
-          <p class="header2">The American Community Survey collects data about fundamental parts of American life, such as education levels, poverty, healthcare, and more. <br/>
-            <br/>
-          Examining this graph, we can see that there is a positive correlation between lack of healthcare and poverty as the graph as a very slight positive slope. <br/>
+          <p class="header2">Examining this graph, we can see that there is a positive correlation between lack of healthcare and poverty as the graph as a very slight positive slope.. <br/>
             <br/>
           We can immediately understand why, in the United States, the richest country in the world without universal healthcare, why these two factors are correlated. Healthcare is linked to professions, whereby professions that are more stable and pay more, such as office jobs, universally offer healthcare packages. Jobs which pay less and are less stable, such as service jobs, frequently do not offer healthcare or significant full-time employment opportunities. <br/>
           <br/>
           The United States does offer some healthcare options for those who do not receive health insurance via employers, for older people and very poor people. Unfortunately, in areas with the highest poverty, such as Louisiana, Mississippi, and New Mexico, the policy positions of elected officials are less inclined toward providing healthcare opportunities for impoverished citizens.<br/>
           <br/>
           A fundamental question to arise from this predicament is: Does lack of healthcare increase poverty? Or does poverty decrease access to healthcare? Or some combination of both? 
+          </p>
+        </div>
+        <div>
+          <h2 class="header2">Unpacking this data with Tableau Dashboards</h2>
+        </div>
+        <div id="lowpoverty"></div>
+        <div>
+          <iframe width="1220px" height="960px" src="https://public.tableau.com/shared/FBW4DXFXF?:display_count=n&:origin=viz_share_link"></iframe>
+        </div>
+        <div>
+          <p class="header2">Examining the top five highest poverty and top five states without healthcare, there is some overlap, specifically in the Sun Belt.<br/>
+          <br/>
+          Contextualizing this map with general knowledge about where wealth and power exist in the United States, it's understandable that this part of the United States would have both high poverty and lower healthcare coverage than other states, particularly in the North.<br/></p>
+        </div>
+        <div>
+          <iframe width="1220px" height="960px" src="https://public.tableau.com/views/2014ACSCensusAnalysisofPovertyandHealthcare/MostHealthcareandLowestPoverty?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"></iframe>
+        </div>
+        <div>
+          <p class="header2"> On the other side, examining states with the fewest residents without healthcare and the lowest poverty, again, we can see some overlap, particularly in New England.<br/>
+            <br/>
+            Notable states include Masachusetts, Alaska, and Kentucky. Alaska has very low poverty, but high rates of citizens without healthcare. Kentucky which has high healthcare coverage but also very high poverty breaks the mold. Finally, Massachusetts, which is the state closest to having a universal healthcare program has the fewest residents without insurance and also low poverty.<br/>
           </p>
         </div>
       </div>
